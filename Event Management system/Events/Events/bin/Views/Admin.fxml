@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="625.0" prefWidth="645.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminController">
+   <children>
+      <TextArea fx:id="txtwelcomemsg" editable="false" layoutX="37.0" layoutY="107.0" prefHeight="189.0" prefWidth="527.0" style="-fx-background-color: black;" text="Hi Admin &#10;Welcome to Town Event! Please find below the list of events scheduled on this portal. &#10;You can manage the events on request. &#10;&#10;For any technical assistance please contact our Support Team at:&#10;towneventsupport@gmail.com&#10;Thank you,&#10;Town Events Team. ">
+         <font>
+            <Font name="Californian FB Bold" size="12.0" />
+         </font></TextArea>
+      <ListView fx:id="listView" layoutX="37.0" layoutY="357.0" onMouseClicked="#enableview" prefHeight="242.0" prefWidth="254.0" style="-fx-background-color: pink;" />
+      <Button fx:id="viewevent" layoutX="346.0" layoutY="388.0" mnemonicParsing="false" onAction="#ViewEvent" prefHeight="25.0" prefWidth="83.0" text="View Event" textFill="#0c4861" />
+      <Button fx:id="deleteevent" layoutX="346.0" layoutY="442.0" mnemonicParsing="false" onAction="#DeleteEvent" prefHeight="25.0" prefWidth="83.0" text="Delete Event" textFill="#0e475e" />
+      <Hyperlink fx:id="hyplogout" alignment="CENTER" contentDisplay="CENTER" layoutX="490.0" layoutY="50.0" onAction="#Logout" prefHeight="23.0" prefWidth="141.0" text="Logout" textFill="#5fa430" underline="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Hyperlink>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="110.0" layoutY="40.0" prefHeight="41.0" prefWidth="439.0" text="TOWN EVENTS" textFill="#0d0d0dfc">
+         <font>
+            <Font name="Century Gothic Bold" size="38.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="321.0" prefHeight="17.0" prefWidth="149.0" text="List of Ongoing Events">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      
+     
+   </children>
+</AnchorPane>

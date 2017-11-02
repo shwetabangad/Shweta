@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="Next">NEXT</string>
+    <string name="Back">BACK</string>
+    <string name="Exit">EXIT</string>
+    <!-- END -->
+    <string name="app_name">VehicleTowingClient</string>
+    <!-- END -->
+    <string name="projectname">Vehicle Towing Client</string>
+    <string name="start">START</string>
+    <!-- END -->
+    <string name="menu">SERVER CONNECTION</string>
+    <string name="ipformname">IP CONFIGATION</string>
+    <string name="ipAddress">IP Address</string>
+    <string name="ipServer">Server IP Address</string>
+    <string name="submit">SUBMIT</string>
+    <string name="cancle">CANCLE</string>
+    <!-- END -->
+    <string name="title_activity_login">Login</string>
+    <string name="loginformname">LOGIN FORM</string>
+    <string name="username">User Name</string>
+    <string name="password">Password</string>
+    <string name="login">LOGIN</string>
+    <!-- END -->
+    <string name="title_activity_welcome_traffic_police">TrafficPolice</string>
+    <string name="trafficpoliceformname">WELCOME TOWING AGENT</string>
+    <string name="location">UPLOAD LOCATION</string>
+    <string name="incidente">NEW INCIDENTE</string>
+    <string name="logout">LOGOUT</string>
+    <!-- END -->
+    <string name="title_activity_incidente">Incidente</string>
+    <string name="incidenteformname">INCIDENTE FORM</string>
+    <string name="incidenteType">Incidente Type</string>
+    <string name="incidenteDescription">Incidente Description</string>
+    <string name="drivingLicenceNo">Driving Licence No</string>
+    <string name="vehicleNo">Vehicle No</string>
+    <string name="amount">Amount</string>
+    <!-- END -->
+    <string name="loading">loading</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_traffic_police">WelcomeTowingAgent</string>
+
+</resources>

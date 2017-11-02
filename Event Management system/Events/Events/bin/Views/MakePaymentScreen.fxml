@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="625.0" prefWidth="645.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PaymentController">
+   <children>
+      <Label layoutX="33.0" layoutY="95.0" prefHeight="25.0" prefWidth="149.0" text="Make Payment!!" textFill="#146896">
+         <font>
+            <Font name="Comic Sans MS Bold" size="18.0" />
+         </font></Label>
+      <Label layoutX="44.0" layoutY="202.0" text="Credit Card:" />
+      <Label layoutX="45.0" layoutY="244.0" text="Exp Date:" />
+      <Label layoutX="45.0" layoutY="286.0" text="CVV:" />
+      <TextField fx:id="txtcreditcard" layoutX="128.0" layoutY="198.0" prefHeight="25.0" prefWidth="164.0" promptText="Enter 16 digit number" />
+      <TextField fx:id="txtcvv" layoutX="128.0" layoutY="282.0" prefHeight="25.0" prefWidth="63.0" promptText="3 digits" />
+      <DatePicker fx:id="expdate" layoutX="128.0" layoutY="240.0" prefHeight="25.0" prefWidth="164.0" />
+      <TextField fx:id="txterror" layoutX="176.0" layoutY="95.0" prefHeight="25.0" prefWidth="345.0" visible="false" />
+      <TextArea fx:id="txtticketdetails" layoutX="334.0" layoutY="197.0" prefHeight="196.0" prefWidth="267.0" style="-fx-background-color: black;">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font></TextArea>
+      <Button layoutX="40.0" layoutY="331.0" mnemonicParsing="false" onAction="#pay" text="Pay" textFill="#0f1468" />
+      <Button layoutX="138.0" layoutY="331.0" mnemonicParsing="false" onAction="#reset" text="Reset" textFill="#16187c" />
+      <Hyperlink layoutX="49.0" layoutY="401.0" onAction="#cancel" text="Cancel Tickets and Back To Event Details" underline="true" />
+      <Hyperlink fx:id="hypHome" layoutX="52.0" layoutY="432.0" onAction="#Home" text="Back to Home" underline="true" />
+      <TextField fx:id="txterror" layoutX="160.0" layoutY="95.0" visible="false" />
+      <TextField fx:id="txterror1" editable="false" layoutX="135.0" layoutY="137.0" prefHeight="33.0" prefWidth="288.0" promptText="Error Message" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="110.0" layoutY="20.0" prefHeight="41.0" prefWidth="439.0" text="TOWN EVENTS" textFill="#160586fc">
+         <font>
+            <Font name="Century Gothic Bold" size="38.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
